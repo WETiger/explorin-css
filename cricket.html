@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket animation</title>
+    <style>
+        .box-area {
+            border: 1px solid indianred;
+        }
+
+        .bat {
+            width: 25%;
+            transform: rotate(20deg);
+            transition: transform 0.6s ease-in;
+        }
+
+        .box-area:hover .bat {
+            transform: rotate(-50deg);
+            transform-origin: top right;
+        }
+
+        .ball {
+            width: 35px;
+            height: 35px;
+            background-image: linear-gradient(rgb(206, 9, 68), rgb(187, 17, 17));
+            border-radius: 50%;
+            position: relative;
+            left: 451px;
+            bottom: 102px;
+            transition: transform 1s ease-out .65s;
+        }
+
+        .box-area:hover .ball {
+            transform: translate(870px, -200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-area">
+        <img class="bat" src="images/bat1.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
